@@ -1,0 +1,54 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+
+
+
+//cria nosso tema
+$my-color-1: #2A3342;
+$my-color-2: #f0f0f0;
+$my-color-3: #FF9526;
+$my-color-4: #E4A014;
+$my-color-5: #F2BF26;/*#E65F5C*/
+
+$theme-colors:(
+	"my-color-1": $my-color-1,
+	"my-color-2": $my-color-2,
+	"my-color-3": $my-color-3,
+	"my-color-4": $my-color-4,
+	"my-color-5": $my-color-5
+);
+
+//classes personalizadas
+$link-color: $my-color-3; 
+$link-hover-color: darken($link-color, 15%);
+$enable-rounded: false;
+
+//$card-cap-bg: rgba($black, .5);
+
+.bg-banner-header{
+	background-image:
+		linear-gradient(
+			rgba(0, 0, 0, 0),
+			rgba(0,0,0,0.75)
+		);
+}
+
+.banner-header {
+    min-height: 350px;
+    object-fit: cover;
+}
+
+//deixa as imagens dos posts responsivas
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+//importa o bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";

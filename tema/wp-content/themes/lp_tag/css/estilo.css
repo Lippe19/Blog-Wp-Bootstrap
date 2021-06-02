@@ -1,0 +1,40 @@
+
+/* ----------------------------------
+:: 1.0 Navbar
+---------------------------------- */
+/*Cor da barra de Menu 
+.bg-dark*/
+.scrolled-um{
+    /*background: rgba(46, 50, 66, .8) !important;*/
+    background: rgba(.8) !important;
+}
+.bg-dark.scrolled-dois{
+    background: rgba(46, 50, 66, .9) !important;
+    /*background: white !important;*/
+}
+
+li {
+    /*list-style: none;*/
+    color: #e4a014;
+}
+.barra {
+    height: 5px;
+    background-color: rgba(54, 160, 199,.8);
+    width: 0%;
+    margin: -5px 0px 0px 0px;
+    border: none;
+    z-index: 1;
+    position: relative;
+}
+.barra.anima {
+    -webkit-transition: width 4.25s linear;
+    -moz-transition: width 4.25s linear;
+    -o-transition: width 4.25s linear;
+    transition: width 4.25s linear;
+}
+
+.img-capa-post{
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
